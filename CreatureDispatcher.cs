@@ -203,6 +203,7 @@ public class Line
     // integers
     public int mod = 0;
     public int range = 0;
+    // For Heal the range would be set to 0 for (self)
     public int shield = 0;
     public int pierce = 0;
     public int push = 0;
