@@ -1,0 +1,13 @@
+{ 
+  "name": "Ancient Artillery"
+  , "cards":
+      [ {"shuffle":false, "initiative":46, "line":[{"name":"attack", "mod":-1, "range": 2}]}
+      , {"shuffle":true,  "initiative":71, "line":[{"name":"attack", "mod": 0, "range": 0}, {"name":"text", "label": "All adjacent enemies suffer 2 damage"}]}
+      , {"shuffle":true,  "initiative":71, "line":[{"name":"attack", "mod":0, "range":0}, {"name":"text", "label": "All adjacent enemies suffer 2 damage"}]}
+      , {"shuffle":false, "initiative":37, "line":[{"name":"push", "mod": 1}, {"name":"text", "label":"Target all adjacent enemies"}, {"name":"attack", "mod":-1, "range":-1, "aoe":"aoe-triangle-2-side"}]}
+      , {"shuffle":false, "initiative":37, "line":[{"name":"push", "mod": 1}, {"name":"text", "label":"Target all adjacent enemies"}, {"name":"attack", "mod":-1, "range":-1, "aoe":"aoe-circle"}]}
+      , {"shuffle":false, "initiative":17, "line":[{"name":"push", "mod": 2}, {"name":"text", "label":"Target all adjacent enemies"}, {"name":"shield", "mod":2}, {"name":"attack", "mod":-2, "range":0 }]}
+      , {"shuffle":false, "initiative":95, "line":[{"name":"attack", "mod": 1, "range":0}]}
+      , {"shuffle":false, "initiative":46, "line":[{"name":"attack", "mod":-1, "range":0, "aoe":"aoe-triangle-2-side", "immobilize":true}]}
+      ]
+ }
