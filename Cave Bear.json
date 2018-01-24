@@ -2,12 +2,12 @@
   "name": "Cave Bear"
   , "cards":
 	  [ {"shuffle":false, "initiative":41, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0} ]}
-	  , {"shuffle":false, "initiative":60, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": +1} ]}
+	  , {"shuffle":false, "initiative":60, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": 1} ]}
 	  , {"shuffle":true, "initiative":80, "line":[{"name":"attack", "mod": -1}, {"name":"move", "mod": -2}, {"name":"attack", "mod": -1, "wound":true} ]}
 	  , {"shuffle":false, "initiative":61, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": -1, "target": 2} ]}
 	  , {"shuffle":false, "initiative":03, "line":[{"name":"shield", "mod":1}, {"name":"retaliate", "mod": 2}, {"name":"heal", "mod": 2, "range": 0} ]}
 	  , {"shuffle":false, "initiative":14, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "immobilize":true} ]}
-	  , {"shuffle":true, "initiative":34, "line":[{"name":"attack", "mod": +1, "wound":true} ]}
-	  , {"shuffle":false, "initiative":13, "line":[{"name":"move", "mod":+1}, {"name":"attack", "mod": -1} ]}
+	  , {"shuffle":true, "initiative":34, "line":[{"name":"attack", "mod": 1, "wound":true} ]}
+	  , {"shuffle":false, "initiative":13, "line":[{"name":"move", "mod": 1}, {"name":"attack", "mod": -1} ]}
 	  ]
 }
