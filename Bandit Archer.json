@@ -1,0 +1,13 @@
+ { 
+  "name": "Archer"
+  , "cards":
+      [ {"shuffle":false, "initiative":16, "line":[{"name":"move", "mod": 1}, {"name":	"attack", "mod":  -1,	"range": 0	}]}
+      , {"shuffle":false, "initiative":31, "line":[{"name":"move", "mod": 0}, {"name":	"attack", "mod":  0,	"range": 0		}]}
+      , {"shuffle":false, "initiative":32, "line":[{"name":"move", "mod": 0}, {"name":	"attack", "mod":  1,	"range":-1		}]}
+      , {"shuffle":false, "initiative":44, "line":[{"name":"move", "mod":-1}, {"name":	"attack", "mod":  1,	"range": 0		}]}
+      , {"shuffle":false, "initiative":56, "line":[{"name":"attack", "mod":-1,	"range": 0,		"target": 2		}]}
+      , {"shuffle":true,  "initiative":68, "line":[{"name":"attack", "mod":1,		"range": 1						}]}
+      , {"shuffle":false, "initiative":14, "line":[{"name":"move", "mod":1}, {"name":"attack", "mod":-1, "range":0}, {"name":"text", "label":"Create a 3 damage trap in an adjacent empty hex closest to an enemy."} ]}
+      , {"shuffle":true,  "initiative":29, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":-1, "range":1, "immobilize":true}]}
+      ]
+}    
