@@ -4,7 +4,7 @@
 	  [ {"shuffle":false, "initiative":72, "line":[{"name":"attack", "mod":1, "range":3}, {"name":"text", "label":"Stone Golem suffers 2 damage."} ]}
 	  , {"shuffle":true, "initiative":90, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":1} ]}
 	  , {"shuffle":false, "initiative":83, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":-1}, {"name":"text", "label":"Target all adjacent enemies"} ]}
-	  , {"shuffle":false, "initiative":28, "line":[{"name":"move", "mod":}, {"name":"attack", "mod"-2, "range":3, "pull":2, "immobilize":true} ]}
+	  , {"shuffle":false, "initiative":28, "line":[{"name":"move", "mod":1}, {"name":"attack", "mod":-2, "range":3, "pull":2, "immobilize":true} ]}
 	  , {"shuffle":false, "initiative":11, "line":[{"name":"retaliate", "mod":3, "range":3} ]}
 	  , {"shuffle":false, "initiative":28, "line":[{"name":"move", "mod":1}, {"name":"attack", "mod":0}, {"name":"text", "label":"Stone Golem suffers 1 damage."} ]}
 	  , {"shuffle":true, "initiative":51, "line":[{"name":"move", "mod":1}, {"name":"attack", "mod":-1} ]}
