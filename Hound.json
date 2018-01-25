@@ -1,0 +1,13 @@
+{
+  "name": "Hound"
+  , "cards":
+	  [ {"shuffle":false, "initiative":26, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0} ]}
+	  , {"shuffle":true, "initiative":19, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0}, {"name":"text", "label":"Add +2 Attack if the target is adjacent toa ny of the Hound's allies."} ]}
+	  , {"shuffle":false, "initiative":7, "line":[{"name":"move", "mod":0, "muddle":true}, {"name":"text", "label":"Target all adjacent enemies"-1} ]}
+	  , {"shuffle":false, "initiative":26, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod"0} ]}
+	  , {"shuffle":false, "initiative":6, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":0, "immobilize":true} ]}
+	  , {"shuffle":true, "initiative":19, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0}, {"name":"text", "label":"Add +2 Attack if the target is adjacent to any of the Hound's allies."} ]}
+	  , {"shuffle":false, "initiative":83, "line":[{"name":"move", "mod":-2}, {"name":"attack", "mod":1} ]}
+	  , {"shuffle":false, "initiative":72, "line":[{"name":"attack", "mod":-1, "pierce":2}, {"name":"move", "mod":-2}, {"name":"attack", "mod":-1, "pierce":2} ]}
+	  ]
+}
