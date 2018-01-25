@@ -1,0 +1,13 @@
+{
+  "name": "Giant Viper"
+  , "cards":
+	  [ {"shuffle":false, "initiative":23, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":-1, "immobilize":true}, {"name":"attack", "mod":-1} ]}
+	  , {"shuffle":false, "initiative":58, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":1} ]}
+	  , {"shuffle":false, "initiative":43, "line":[{"name":"move", "mod":1, "jump":true}, {"name":"attack", "mod":-1}, {"name":"text", "label":"Target all adjacent enemies"} ]}
+	  , {"shuffle":true, "initiative":32, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0}, {"name":"text", "label":"Add +2 Attack if the target is adjacent to any of the Giant Viper's allies"} ]}
+	  , {"shuffle":false, "initiative":58, "line":[{"name":"move", "mod":1, "jump":true}, {"name":"attack", "mod":-1}, {"name":"text", "label":"All attacks targeting Giant Viper this round gain Disadvantage."} ]}
+	  , {"shuffle":false, "initiative":43, "line":[{"name":"move", "mod":-1, "jump":true}, {"name":"attack", "mod":0, "target":2} ]}
+	  , {"shuffle":false, "initiative":11, "line":[{"name":"shield", "mod":1}, {"name":"attack", "mod":-1} ]}
+	  , {"shuffle":true, "initiative":32, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0}, {"name":"text", "label":"Add +2 Attack if the target is adjacent to any of the Giant Viper's allies."} ]}
+	  ]
+}
