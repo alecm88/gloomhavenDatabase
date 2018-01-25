@@ -1,0 +1,13 @@
+{
+  "name": "Cultist"
+  , "cards":
+	  [ {"shuffle":false, "initiative":10, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1}, {"name":"attack", "mod": 2, "aoe":"aoe-circle"}, {"name":"text", "label": "On death:"} ]}
+	  , {"shuffle":true, "initiative":63, "line":[{"name":"text", "label":"Summon normal Living Bones"}, {"name":"text", "label":"Cultist suffers 2 damage."} ]}
+	  , {"shuffle":false, "initiative":31, "line":[{"name":"move", "mod": -1}, {"name":"heal", "mod": 3, "range":3} ]}
+	  , {"shuffle":false, "initiative":27, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0} ]}
+	  , {"shuffle":false, "initiative":39, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod": 0}, {"name":"heal", "mod": 1, "range": 0} ]}
+	  , {"shuffle":true, "initiative":63, "line":[{"name":"text", "label":"Summon normal Living Bones"}, {"name":"text", "label":"Cultist suffers 2 damage."} ]}
+	  , {"shuffle":false, "initiative":27, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0} ]}
+	  , {"shuffle":false, "initiative":10, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1}, {"name":"attack", "mod": 2, "aoe":"aoe-circle"}, {"name":"text", "label": "On death:"} ]}
+	  ]
+}

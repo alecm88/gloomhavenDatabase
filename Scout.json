@@ -1,0 +1,13 @@
+{
+  "name": "Scout"
+  , "cards":
+	  [ {"shuffle":true, "initiative":35, "line":[{"name":"move", "mod": 1, "jump":true}, {"name":"loot", "mod": 1} ]}
+	  , {"shuffle":false, "initiative":79, "line":[{"name":"attack", "mod":-1, "range":4, "target":2} ]}
+	  , {"shuffle":true, "initiative":92, "line":[{"name":"attack", "mod": 2, "poison":true} ]}
+	  , {"shuffle":false, "initiative":69, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": 1} ]}
+	  , {"shuffle":false, "initiative":54, "line":[{"name":"move", "mod":-2}, {"name":"attack", "mod": 0, "range":3, "poison":true} ]}
+	  , {"shuffle":false, "initiative":53, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0} ]}
+	  , {"shuffle":false, "initiative":40, "line":[{"name":"move", "mod": 1}, {"name":"attack", "mod": -1} ]}
+	  , {"shuffle":false, "initiative":29, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range":3} ]}
+	  ]
+}
