@@ -1,4 +1,4 @@
-# gloomhavenDatabase
+# Welcome to the Database Section
 Monster stats are in the Creature Stats
 Monster AI Decks are in Creature Deck
 
