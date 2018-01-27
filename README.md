@@ -12,7 +12,7 @@ If you're not sure about what type the database element is, just reference the .
 
 ## STAY OUT OF THE SPOILER FOLDER
 - Unless you finished the game or you don't care about it, then you can go in. 
-- Don't change stuff unless in the spoiler folder you've specifically had instructions to do so from me. 
+- Don't change stuff in the spoiler folder unless you've specifically had instructions to do so from me (Donald). 
 
 
 Thanks for helping!
