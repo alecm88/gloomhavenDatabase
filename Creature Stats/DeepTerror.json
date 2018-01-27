@@ -7,13 +7,13 @@
             "health": 3,
             "move": 0,
             "attack": 2,
-            "range": 0,
+            "range": 0
           },
           "elite": {
             "health": 5,
             "move": 0,
             "attack": 3,
-            "range": 0,
+            "range": 0
           }
         },
         {
@@ -23,7 +23,7 @@
             "move": 0,
             "attack": 2,
             "range": 0,
-			"retaliate":1
+            "retaliate":1
           },
           "elite": {
             "health": 6,
