@@ -1,7 +1,7 @@
 # Welcome to the Database Section
 Mart: Monster stats are in the Creature Stats.  
 
-Everyone else: Please work on the Monster AI Deck. 
+<bold>Everyone else:</bold> Please work on the Monster AI Deck. 
 
 Monster AI Decks are in Creature Deck. Build one monster at a time, titles should use camel casing. You can use the database to acquire your information quicker and just edit them (I got it from gloomy companion). Keep in mind that the database works out of "Lines". This means anything that's related to the type of line goes in the same line. I.e. type:attack, if the card were to have a range & poison, that is part of the same line (even though on the original cards they are each their own lines). 
 
