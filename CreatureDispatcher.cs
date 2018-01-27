@@ -1,77 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.IO;
-
-public class CreatureDispatcher : MonoBehaviour {
-    // String variable that's going to hold our file. 
-    string path;
-
-    // Hold the raw json data
-    string jsonString;
-
-    public CreatureList[] creatureList;
-    public GameObject[] cardList;
-    public List<MonsterStats> creatures;
-    DeckDB deckDB;
-
-
-    private void Start()
-    {
-
-        // Path to json File and we want the path to a certain file. 
-        path = Application.streamingAssetsPath + "/Deck.json";
-        // Now we want to bring it into Unity. 
-        jsonString = File.ReadAllText(path);
-
-        // FromJson - We pass it the creature type so the from json it knows what to map it to. 
-        // Creature test - so it knows what it's working with (db)
-        deckDB = JsonUtility.FromJson<DeckDB>(jsonString);
-
-        // THEN REPEAT
-
-        for (int i = 0; i < creatureList.Length; i++)
-        {
-            // Path to json File and we want the path to a certain file. 
-            path = Application.streamingAssetsPath + creatureList[i].dbStatPath;
-            // Now we want to bring it into Unity. 
-            jsonString = File.ReadAllText(path);
-
-            // FromJson - We pass it the creature type so the from json it knows what to map it to. 
-            // Creature test - so it knows what it's working with (db)
-            MonsterStats mStat = JsonUtility.FromJson<MonsterStats>(jsonString);
-            creatureList[i].stats = mStat;
-
-            foreach (Deck deck in deckDB.deck)
-            {
-                if(deck.name == creatureList[i].DeckType)
-                {
-                    creatureList[i].deck = deck;
-                }
-            }
-        }
-
-        ResetAllMonsters();
-
-    }
-
-    public void ResetAllMonsters()
-    {
-        for (int i = 0; i < creatureList.Length; i++)
-        {
-            foreach (Creature creature in creatureList[i].creature)
-            {
-                creature.status = Creature.Status.Dead;
-            }
-            creatureList[i].shuffleDeck();
-            
-        }
-    }
-}
-// We have to tell unity that this IS serializable.
 [System.Serializable]
 public class MonsterStats
 {
+    // ==================================================================
+    //                          CREATURE STATS DATABASE JSON
+    // ==================================================================
     public string name;
     public bool isBoss = false;
     public bool canFly = false;
@@ -82,7 +14,7 @@ public class MonsterStats
 [System.Serializable]
 public class Level
 {
-    public int level;
+    public int level; // Level is an int do not use 0 in front of any digit it will break the database. 
     public Normal normal;
     public Elite elite;
 }
@@ -170,12 +102,11 @@ public class Elite
     public int retaliateRange = 0;
 }
 
-// We have to tell unity that this IS serializable.
-[System.Serializable]
-public class DeckDB
-{
-    public Deck[] deck;
-}
+
+
+// ==================================================================
+//                          DECK DATABASE JSON
+// ==================================================================
 
 [System.Serializable]
 public class Deck
@@ -196,9 +127,8 @@ public class Cards
 public class Line
 {
     public string name;
-    /* Types:
-     * attack, move, heal, retaliate, push, pull, createElement, convert element
-     */
+    // Types: attack, move, heal, retaliate, push, pull, createElement, convert element, umm might be more
+  
     public bool jump = false;
     // integers
     public int mod = 0;
@@ -209,8 +139,8 @@ public class Line
     public int push = 0;
     public int pull = 0;
     // Strings
-    public string aoe = "";
-    public string label = "";
+    public string aoe = "";   // just reference the other db for now. 
+    public string label = ""; // This is the text tha appears on a line
     // Conditions
     public bool immobilize = false;
     public bool curse = false;
@@ -220,6 +150,5 @@ public class Line
     public bool poison = false;
     public bool stun = false;
     public bool bless = false;
-
 }
 
