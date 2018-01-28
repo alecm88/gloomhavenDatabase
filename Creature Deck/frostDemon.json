@@ -1,9 +1,12 @@
 { "name": "Frost Demon"
-		  , "cards":
-			  [ {"shuffle":false, "initiative":18, "line":[{"name":"immobilize"},     {"name":"text", "label": "Target all enemies within Range 2"}, {"name":"convertElementToAction", "element":"frost", "action":"heal", "mod":3, "range":0}  ]}
-			  , {"shuffle":false, "initiative":38, "line":[{"name":"move", "mod": 1}, {"name":"attack", "mod":-1 }  ]}
-			  , {"shuffle":false, "initiative":58, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod":0  } ]}
-			  , {"shuffle":false,  "initiative":58, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":0, "range":2}, {"name":"convertElementToAction", "element":"frost", "action":"attack", "mod":2, "range":1} ]}
-			  , {"shuffle":true,   "initiative":78, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":0, "aoe":""}
-			  ]
-		}
+  , "cards":
+	  [ {"shuffle":false, "initiative":18,  "line":[{"name":"immobilize"},       {"name":"text", "label": "Target all enemies within Range 2"}, {"name":"convertElementToAction", "element":"frost", "action":"heal", "mod":3, "range":0}  ]}
+	  , {"shuffle":false, "initiative":38,  "line":[{"name":"move", "mod": 1},   {"name":"attack", "mod":-1 }  ]}
+	  , {"shuffle":false, "initiative":58,  "line":[{"name":"move", "mod": 0},   {"name":"attack", "mod":0  } ]}
+	  , {"shuffle":false,  "initiative":58, "line":[{"name":"move", "mod":-1},   {"name":"attack", "mod":0, "range":2}, {"name":"convertElementToAction", "element":"frost", "action":"attackBuff", "mod":2, "range":1} ]}
+	  , {"shuffle":true,   "initiative":78, "line":[{"name":"move", "mod":-1},   {"name":"attack", "mod":0, "aoe":"aoe-triangle-2-side-with-black"}, {"name":"createElement", "element":"frost"} ]}
+	  , {"shuffle":true,   "initiative":78, "line":[{"name":"move", "mod":-1},   {"name":"attack", "mod":0, "aoe":"aoe-triangle-2-side-with-black"}, {"name":"createElement", "element":"frost"} ]}
+      , {"shuffle":false, "initiative":58,  "line":[{"name":"move", "mod":-1},   {"name":"attack", "mod":-1, "pierce":3}, {"name":"convertElementToAction", "element":"any", "action":"element", "toElement":"frost" } ]}
+	  , {"shuffle":false, "initiative":18,   "line":[{"name":"shield", "mod":2}, {"name":"move",   "mod":1 }, {"name":"convertElementToAction", "element":"fire", "action":"text", "label":"Frost Demon suffers 1 damage."} ]}
+	  ]          
+}
