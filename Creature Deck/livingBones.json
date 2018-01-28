@@ -1,0 +1,12 @@
+{ "name": "Living Bones"
+        , "cards":
+			[ {"shuffle":false, "initiative":64, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":1}]}
+			, {"shuffle":true, "initiative":20, "line":[{"name":"move", "mod":-2}, {"name":"attack", "mod":0}, {"name":"heal", "mod":2} ]}
+			, {"shuffle":false, "initiative":25, "line":[{"name":"move", "mod":1}, {"name":"attack", "mod":-1} ]}
+			, {"shuffle":false, "initiative":45, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0} ]}
+			, {"shuffle":false, "initiative":45, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0} ]}
+			, {"shuffle":false, "initiative":81, "line":[{"name":"attack", "mod":2} ]}
+			, {"shuffle":false, "initiative":74, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0}, {"name":"text", "label":"Target one enemy with all attacks."} ]}
+			, {"shuffle":true, "initiative":12, "line":[{"name":"shield", "mod":1}, {"name":"heal", "mod":2} ]}
+			]
+}
