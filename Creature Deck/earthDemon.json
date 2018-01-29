@@ -1,0 +1,13 @@
+{
+    "name":"Earth Demon"
+    , "cards":
+        [{"shuffle":true,"initiative":40,"line":[{"name":"heal","mod":3,"range":0},{"name":"convertElementToAction","element":"earth","action":"immobilize"},{"name":"text","label":"Target all enemies within Range 3."}]}
+        ,{"shuffle":true,"initiative":42,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1}]}
+        ,{"shuffle":false,"initiative":62,"line":[{"name":"move","mod":0},{"name":"attack","mod":0},{"name":"createElement","element":"earth"}]}
+        ,{"shuffle":false,"initiative":71,"line":[{"name":"attack","mod":0,"range":4},{"name":"convertElementToAction","element":"earth","action":"attackBuff","target":2}]}
+        ,{"shuffle":false,"initiative":83,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1},{"name":"createElement","element":"earth"}]}
+        ,{"shuffle":false,"initiative":93,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"earth","action":"attackBuff","push":1}]}
+        ,{"shuffle":false,"initiative":79,"line":[{"name":"move","mod":1},{"name":"attack","mod":0},{"name":"convertElementToAction","element":"air","action":"attackBuff","mod":-2}]}
+        ,{"shuffle":false,"initiative":87,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"aoe":"aoe-4-with-black"},{"name":"convertElementToAction","element":"any","action":"element","toElement":"earth"}]}
+        ]
+}
