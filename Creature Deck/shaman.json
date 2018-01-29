@@ -6,7 +6,7 @@
 	  , {"shuffle":false, "initiative":9, "line":[{"name":"move", "mod": 1}, {"name":"attack", "mod":-1, "curse":true, "target":2} ]}
 	  , {"shuffle":false, "initiative":62, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0} ]}
 	  , {"shuffle":true, "initiative":23, "line":[{"name":"move", "mod":0}, {"name":"heal", "mod": 3, "range":3} ]}
-	  , {"shuffle":false, "initiative":89, "line":[{"name":"move", "mod":-1}, {"name":"heal", "mod":1 "range":-1}, {"name":"text", "label":"Affect all adjacent allies"}, {"name":"bless", "range":0} ]}
+	  , {"shuffle":false, "initiative":89, "line":[{"name":"move", "mod":-1}, {"name":"heal", "mod":1, "range":-1}, {"name":"text", "label":"Affect all adjacent allies"}, {"name":"bless", "range":0} ]}
 	  , {"shuffle":true, "initiative":23, "line":[{"name":"move", "mod": 0}, {"name":"heal", "mod": 3, "range":3} ]}
 	  , {"shuffle":false, "initiative":74, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": 1} ]}
 	  ]
