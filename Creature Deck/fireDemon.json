@@ -1,0 +1,13 @@
+{
+  "name": "Flame Demon"
+  , "cards":
+    [{"shuffle":false,"initiative":03,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1,"range":0},{"name":"createElement","element":"fire"}]}
+    ,{"shuffle":false,"initiative":24,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0},{"name":"createElement","element":"fire"}]}
+    ,{"shuffle":true,"initiative":46,"line":[{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"fire","action":"attackBuff","aoe":"aoe-circle"}]}
+    ,{"shuffle":false,"initiative":49,"line":[{"name":"attack","mod":0,"aoe":"aoe-line-3-with-black"},{"name":"convertElementToAction","element":"fire","action":"attackBuff","mod":1,"wound":true}]}
+    ,{"shuffle":false,"initiative":67,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":-1},{"name":"createElement","element":"fire"}]}
+    ,{"shuffle":false,"initiative":77,"line":[{"name":"attack","mod":0},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"ice","action":"text","label":"Flame Demon suffers 1 damaage."}]}
+    ,{"shuffle":true,"initiative":30,"line":[{"name":"convertElementToAction","element":"fire","action":"text","label":"All adjacent enemies suffer 2 damage."},{"name":"move","mod":0},{"name":"attack", "mod":-2,"wound":true,"target":2}]}
+    ,{"shuffle":false,"initiative":08,"line":[{"name":"move","mod":-1},{"name":"text","label":"Create a 4 damage trap in an adjacent empty hex closest to an enemy."},{"name":"convertElementToAction","element":"any","action":"element","toElement":"fire"}]}
+  ]
+}
