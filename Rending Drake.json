@@ -1,9 +1,9 @@
 {
   "name": "Rending Drake"
   , "cards":
-	  [ {"shuffle":false, "initiative":59, "line":[{"name":"move", "mod"-2}, {"name":"attack", "mod":1, "target":2} ]}
+	  [ {"shuffle":false, "initiative":59, "line":[{"name":"move", "mod":-2}, {"name":"attack", "mod":1, "target":2} ]}
 	  , {"shuffle":true, "initiative":13, "line":[{"name":"attack", "mod":-1}, {"name":"move", "mod":-1}, {"name":"attack", "mod":-1} ]}
-	  , {"shuffle":true, "initiative":72, "line":[{"name":"attack", "mod"-1}, {"name":"attack", "mod":-1}, {"name":"attack", "mod":-2} ]}
+	  , {"shuffle":true, "initiative":72, "line":[{"name":"attack", "mod":-1}, {"name":"attack", "mod":-1}, {"name":"attack", "mod":-2} ]}
 	  , {"shuffle":false, "initiative":6, "line":[{"name":"shield", "mod":2}, {"name":"heal", "mod":2, "range":0}, {"name":"strengthen":true, "range":0} ]}
 	  , {"shuffle":false, "initiative":25, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0} ]}
 	  , {"shuffle":false, "initiative":54, "line":[{"name":"move", "mod":-2}, {"name":"attack", "mod":-1, "range":3, "target":2, "poison":true} ]}
