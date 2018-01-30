@@ -1,0 +1,13 @@
+{
+  "name":"Harrower Infester"
+  , "cards":
+    [{"shuffle":false,"initiative":38,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"target":2}]}
+    ,{"shuffle":false,"initiative":07,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"poison":true},{"name":"createElement","element":"dark"}]}
+    ,{"shuffle":false,"initiative":16,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"heal","mod":5,"range":0}]}
+    ,{"shuffle":false,"initiative":16,"line":[{"name":"attack","mod":2,"immobilize":true},{"name":"retaliate","mod":2}]}
+    ,{"shuffle":true,"initiative":02,"line":[{"name":"shield","mod":2},{"name":"retaliate","mod":2,"range":3}]}
+    ,{"shuffle":false,"initiative":30,"line":[{"name":"move","mod":-1},{"name":"attack","mod":0,"aoe":"aoe-line-4-with-black"},{"name":"convertElementToAction","element":"dark","action":"text","label":"Perform \"Heal 2\" for each target damaged"}]}
+    ,{"shuffle":false,"initiative":38,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"target":2},{"name":"convertElementToAction","element":"dark","action":"attackBuff","mod":2,"disarm":true}]}
+    ,{"shuffle":true,"initiative":07,"line":[{"name":"attack","mod":-1,"range":3,"muddle":true},{"name":"heal","mod":4,"range":0}]}
+    ]
+}
