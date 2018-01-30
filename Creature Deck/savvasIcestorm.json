@@ -1,0 +1,13 @@
+{
+    "name":"Savvas Icestorm"
+    , "cards":
+        [{"shuffle":false,"initiative":70,"line":[{"name":"push","mod":2},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"air","action":"text","label":"Push 4 instead"},{"name":"attack","mod":1,"range":1}]}
+        ,{"shuffle":false,"initiative":98,"line":[{"name":"text","label":"Summon normal Wind Demon"},{"name":"createElement","element":"air"}]}
+        ,{"shuffle":false,"initiative":98,"line":[{"name":"text","label":"Summon normal Frost Demon"},{"name":"createElement","element":"ice"}]}
+        ,{"shuffle":false,"initiative":19,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"range":-1},{"name":"shield","mod":1},{"name":"text","label":"Affect self and all allies within Range 2"},{"name":"createElement","element":"ice"}]}
+        ,{"shuffle":false,"initiative":14,"line":[{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"ice","action":"attackBuff","mod":2,"immobilize":true},{"name":"retaliate","mod":2},{"name":"createElement","element":"ice"}]}
+        ,{"shuffle":false,"initiative":14,"line":[{"name":"shield","mod":4},{"name":"heal","mod":2},{"name":"convertElementToAction","element":"ice","action":"text","label":"+3 Heal"},{"name":"convertElementToAction","element":"air","action":"attack","mod":"0"}]}
+        ,{"shuffle":true,"initiative":47,"line":[{"name":"disarm"},{"name":"text","label":"Target all adjacent enemies"},{"name":"move","mod":0},{"name":"attack","mod":-1,"range":0},{"name":"createElement","element":"air"}]}
+        ,{"shuffle":true,"initiative":35,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1,"aoe":"aoe-triangle-3-side-with-corner-black"},{"name":"createElement","element":"ice"}]}
+    ]
+}
