@@ -1,0 +1,13 @@
+{
+  "name":"Sun Demon"
+  , "cards":
+    [{"shuffle":true,"initiative":17,"line":[{"name":"heal","mod":3,"range":3},{"name":"convertElementToAction","element":"light","action":"text","label":"Target all allies within range"}]}
+    ,{"shuffle":false,"initiative":36,"line":[{"name":"move","mod":0},{"name":"attack","mod":0},{"name":"text","label":"Target all adjacent enemies"},{"name":"createElement","element":"light"}]}
+    ,{"shuffle":false,"initiative":36,"line":[{"name":"move","mod":0},{"name":"attack","mod":0},{"name":"text","label":"Target all adjacent enemies"},{"name":"createElement","element":"light"}]}
+    ,{"shuffle":false,"initiative":68,"line":[{"name":"move","mod":0},{"name":"attack","mod":1},{"name":"createElement","element":"light"}]}
+    ,{"shuffle":true,"initiative":73,"line":[{"name":"move","mod":0},{"name":"attack","mod":1},{"name":"convertElementToAction","element":"light","action":"heal","mod":3,"range":0}]}
+    ,{"shuffle":false,"initiative":95,"line":[{"name":"move","mod":-1},{"name":"attack","mod":0,"range":4},{"name":"convertElementToAction","element":"light","action":"text","label":"Target all enemies within range"}]}
+    ,{"shuffle":false,"initiative":88,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"text","layer":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"dark","action":"muddle","range":0}]}
+    ,{"shuffle":false,"initiative":50,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":3},{"name":"convertElementToAction","element":"any","action":"element","toElement":"light"}]}
+    ]
+}
