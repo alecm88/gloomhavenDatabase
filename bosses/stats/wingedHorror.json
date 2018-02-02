@@ -2,7 +2,7 @@
 
 	"name": "Winged Horror",
 	"isBoss": true,
-	"immunity":{"disarm":true, "wound":true, "curse":true, "stun":true, "muddle":true},
+	"immunity":{"disarm":true, "poison":true, "curse":true, "stun":true, "muddle":true},
 	"level": [
         {
           "level": 0,
