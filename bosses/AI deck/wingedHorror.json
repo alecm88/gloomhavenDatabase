@@ -3,7 +3,7 @@
    "name": "Winged Horror"
    , "cards":
 	   [ {"shuffle":true, "initiative":85, "line":[{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"},{"name":"attack","mod":0, "range":3},{"name":"text","label":"Hatch eggs"}]}
-	   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Summon C eggs"},{"name":"move","mod":-1},{"name":"attack","mod":0}]}
+	   , {"shuffle":true, "initiative":17, "line":[{"name":"egg","label":"Summon C eggs"},{"name":"move","mod":-1},{"name":"attack","mod":0}]}
 	   , {"shuffle":false, "initiative":79, "line":[{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"},{"name":"attack","mod":0, "range":3},{"name":"text","label":"Hatch eggs"}]}
 	   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Summon C eggs"},{"name":"move","mod":-1},{"name":"attack","mod":0}]}
 	   , {"shuffle":false, "initiative":73, "line":[{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"},{"name":"attack","mod":0, "range":3},{"name":"text","label":"Hatch eggs"}]}
