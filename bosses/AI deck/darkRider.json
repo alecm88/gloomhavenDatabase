@@ -1,0 +1,14 @@
+
+{
+   "name": "Dark Rider"
+   , "cards":
+	   [ {"shuffle":true, "initiative":85, "line":[{"name":"move","mod":2},{"name":"attack","mod":0},{"name":"text","label":"Add X to all attacks where X = Hexes moved"}]}
+	   , {"shuffle":true, "initiative":17, "line":[{"name":"move","mod":0},{"name":"text","label":"Summon Imp"},{"name":"attack","mod":-1},{"name":"text","label":"Add X to all attacks where X = Hexes moved"}]}
+	   , {"shuffle":false, "initiative":79, "line":[{"name":"move","mod":2},{"name":"attack","mod":0},{"name":"text","label":"Add X to all attacks where X = Hexes moved"}]}
+	   , {"shuffle":false, "initiative":11, "line":[{"name":"move","mod":0},{"name":"text","label":"Summon Imp"},{"name":"attack","mod":-1},{"name":"text","label":"Add X to all attacks where X = Hexes moved"}]}
+	   , {"shuffle":false, "initiative":73, "line":[{"name":"move","mod":2},{"name":"attack","mod":0},{"name":"text","label":"Add X to all attacks where X = Hexes moved"}]}
+	   , {"shuffle":false, "initiative":14, "line":[{"name":"move","mod":0},{"name":"text","label":"Summon Imp"},{"name":"attack","mod":-1},{"name":"text","label":"Add X to all attacks where X = Hexes moved"}]}
+	   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2},{"name":"text","label":"Add X to all attacks where X = Hexes moved"} ]}
+	   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0},{"name":"text","label":"Add X to all attacks where X = Hexes moved"} ]}
+	   ]
+}
