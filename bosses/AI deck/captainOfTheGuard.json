@@ -1,0 +1,14 @@
+
+{
+   "name": "Captain of the Guard"
+   , "cards":
+	   [ {"shuffle":true, "initiative":85, "line":[{"name":"heal","mod":2},{"name":"text","label":"Affect self and all allies"}]}
+	   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"All allies add +1 Attack to all attacks this round"},{"name":"attack","mod":1}]}
+	   , {"shuffle":false, "initiative":79, "line":[{"name":"heal","mod":2},{"name":"text","label":"Affect self and all allies"}]}
+	   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"All allies add +1 Attack to all attacks this round"},{"name":"attack","mod":1}]}
+	   , {"shuffle":false, "initiative":73, "line":[{"name":"heal","mod":2},{"name":"text","label":"Affect self and all allies"}]}
+	   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"All allies add +1 Attack to all attacks this round"},{"name":"attack","mod":1}]}
+	   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2} ]}
+	   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0} ]}
+	   ]
+}
