@@ -1,6 +1,6 @@
 
 {
-   "name": "The Gloom"
+   "name": "Prime Demon"
    , "cards":
 	   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"Throne moves, Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
 	   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Throne moves, Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
