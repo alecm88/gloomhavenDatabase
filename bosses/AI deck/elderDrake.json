@@ -1,0 +1,13 @@
+{
+   "name": "Elder Drake"
+   , "cards":
+	   [ {"shuffle":true, "initiative":85, "line":[{"name":"attack","mod":0}]}
+	   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Move and summon 2 Zephyrs"}]}
+	   , {"shuffle":false, "initiative":79, "line":[{"name":"attack","mod":0}]}
+	   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Move and summon 2 Zephyrs"}]}
+	   , {"shuffle":false, "initiative":73, "line":[{"name":"attack","mod":0}]}
+	   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Move and summon 2 Zephyrs"}]}
+	   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2}]}
+	   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0}]}
+	   ]
+}
