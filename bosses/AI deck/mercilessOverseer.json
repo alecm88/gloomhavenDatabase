@@ -1,0 +1,13 @@
+{
+   "name": "Merciless Overseer"
+   , "cards":
+	   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"All Scouts act again"}]}
+	   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Summon Vermling Scouts"}]}
+	   , {"shuffle":false, "initiative":79, "line":[{"name":"text","label":"All Scouts act again"}]}
+	   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Summon Vermling Scouts"}]}
+	   , {"shuffle":false, "initiative":73, "line":[{"name":"text","label":"All Scouts act again"}]}
+	   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Summon Vermling Scouts"}]}
+	   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2},{"name":"text","label":"V = Number of Scouts present"}]}
+	   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0},{"name":"text","label":"V = Number of Scouts present"}]}
+	   ]
+}
