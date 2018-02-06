@@ -171,11 +171,11 @@
 		   "name": "Elder Drake"
 		   , "cards":
 			   [ {"shuffle":true, "initiative":85, "line":[{"name":"attack","mod":0, "aoe":"elderDrake"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
-			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text" "label":"Summon 2 Zephyrs."}, {"name":"text" "label":"Zephyrs cannot be damaged in any way."}]}
+			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text", "label":"Summon 2 Zephyrs."}, {"name":"text", "label":"Zephyrs cannot be damaged in any way."}]}
 			   , {"shuffle":false, "initiative":79, "line":[{"name":"attack","mod":0, "aoe":"elderDrake"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
-			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text" "label":"Summon 2 Zephyrs."}, {"name":"text" "label":"Zephyrs cannot be damaged in any way."}]}
+			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text", "label":"Summon 2 Zephyrs."}, {"name":"text", "label":"Zephyrs cannot be damaged in any way."}]}
 			   , {"shuffle":false, "initiative":73, "line":[{"name":"attack","mod":0, "aoe":"elderDrake"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
-			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text" "label":"Summon 2 Zephyrs."}, {"name":"text" "label":"Zephyrs cannot be damaged in any way."}]}
+			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text", "label":"Summon 2 Zephyrs."}, {"name":"text", "label":"Zephyrs cannot be damaged in any way."}]}
 			   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2}]}
 			   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0}]}
 			   ]
@@ -183,7 +183,7 @@
 		{
 		   "name": "Zephyr"
 		   , "cards":
-			   [  {"shuffle":true, "initiative":00, "line":[{"name":"text","label":"*** SPECIAL ***"}, {"name":"text" "label":"Zephyrs cannot be damaged in any way. They play immediately before the Elder Drake's turn every round."},{"name":"move", "mod":0}, {"name":"attack", "mod":0}]}]
+			   [  {"shuffle":true, "initiative":0, "line":[{"name":"text","label":"*** SPECIAL ***"}, {"name":"text", "label":"Zephyrs cannot be damaged in any way. They play immediately before the Elder Drake's turn every round."},{"name":"move", "mod":0}, {"name":"attack", "mod":0}]}]
 		},
 		{
 		  "name": "Flame Demon"
