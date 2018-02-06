@@ -183,14 +183,14 @@
 		{
 		  "name": "Flame Demon"
 		  , "cards":
-			[{"shuffle":false,"initiative":03,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1,"range":0},{"name":"createElement","element":"fire"}]}
+			[{"shuffle":false,"initiative":3,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1,"range":0},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":false,"initiative":24,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":true,"initiative":46,"line":[{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"fire","action":"attackBuff","aoe":"aoe-circle"}]}
 			,{"shuffle":false,"initiative":49,"line":[{"name":"attack","mod":0,"aoe":"aoe-line-3-with-black"},{"name":"convertElementToAction","element":"fire","action":"attackBuff","mod":1,"wound":true}]}
 			,{"shuffle":false,"initiative":67,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":-1},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":false,"initiative":77,"line":[{"name":"attack","mod":0},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"ice","action":"text","label":"Flame Demon suffers 1 damaage."}]}
 			,{"shuffle":true,"initiative":30,"line":[{"name":"convertElementToAction","element":"fire","action":"text","label":"All adjacent enemies suffer 2 damage."},{"name":"move","mod":0},{"name":"attack", "mod":-2,"wound":true,"target":2}]}
-			,{"shuffle":false,"initiative":08,"line":[{"name":"move","mod":-1},{"name":"text","label":"Create a 4 damage trap in an adjacent empty hex closest to an enemy."},{"name":"convertElementToAction","element":"any","action":"element","toElement":"fire"}]}
+			,{"shuffle":false,"initiative":8,"line":[{"name":"move","mod":-1},{"name":"text","label":"Create a 4 damage trap in an adjacent empty hex closest to an enemy."},{"name":"convertElementToAction","element":"any","action":"element","toElement":"fire"}]}
 		  ]
 		},
 		{ "name": "Frost Demon"
@@ -233,13 +233,13 @@
 		  "name":"Harrower Infester"
 		  , "cards":
 			[{"shuffle":false,"initiative":38,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"target":2}]}
-			,{"shuffle":false,"initiative":07,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"poison":true},{"name":"createElement","element":"dark"}]}
+			,{"shuffle":false,"initiative":7,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"poison":true},{"name":"createElement","element":"dark"}]}
 			,{"shuffle":false,"initiative":16,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"heal","mod":5,"range":0}]}
 			,{"shuffle":false,"initiative":16,"line":[{"name":"attack","mod":2,"immobilize":true},{"name":"retaliate","mod":2}]}
-			,{"shuffle":true,"initiative":02,"line":[{"name":"shield","mod":2},{"name":"retaliate","mod":2,"range":3}]}
+			,{"shuffle":true,"initiative":2,"line":[{"name":"shield","mod":2},{"name":"retaliate","mod":2,"range":3}]}
 			,{"shuffle":false,"initiative":30,"line":[{"name":"move","mod":-1},{"name":"attack","mod":0,"aoe":"aoe-line-4-with-black"},{"name":"convertElementToAction","element":"dark","action":"text","label":"Perform \"Heal 2\" for each target damaged"}]}
 			,{"shuffle":false,"initiative":38,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"target":2},{"name":"convertElementToAction","element":"dark","action":"attackBuff","mod":2,"disarm":true}]}
-			,{"shuffle":true,"initiative":07,"line":[{"name":"attack","mod":-1,"range":3,"muddle":true},{"name":"heal","mod":4,"range":0}]}
+			,{"shuffle":true,"initiative":7,"line":[{"name":"attack","mod":-1,"range":3,"muddle":true},{"name":"heal","mod":4,"range":0}]}
 			]
 		},
 		{
@@ -358,8 +358,8 @@
 		{
 		  "name":"Night Demon"
 		  , "cards":
-			[{"shuffle":false,"initiative":04,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"createElement","element":"dark"}]}
-			,{"shuffle":false,"initiative":07,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"convertElementToAction","element":"dark","action":"invisible","range":0}]}
+			[{"shuffle":false,"initiative":4,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"createElement","element":"dark"}]}
+			,{"shuffle":false,"initiative":7,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"convertElementToAction","element":"dark","action":"invisible","range":0}]}
 			,{"shuffle":false,"initiative":22,"line":[{"name":"move","mod":0},{"name":"attack","mod":0},{"name":"createElement","element":"dark"}]}
 			,{"shuffle":false,"initiative":26,"line":[{"name":"attack","mod":-2,"range":3,"target":3},{"name":"convertElementToAction","element":"dark","action":"muddle"}]}
 			,{"shuffle":true,"initiative":46,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1},{"name":"convertElementToAction","element":"dark","action":"attackBuff","mod":2}]}
@@ -550,14 +550,14 @@
 		{
 			"name":"Wind Demon"
 			, "cards":
-				[{"shuffle":false,"initiative":09,"line":[{"name":"attack","mod":-1,"range":0},{"name":"heal","mod":1},{"name":"convertElementToAction","element":"air","action":"invisible"}]}
+				[{"shuffle":false,"initiative":9,"line":[{"name":"attack","mod":-1,"range":0},{"name":"heal","mod":1},{"name":"convertElementToAction","element":"air","action":"invisible"}]}
 				,{"shuffle":true,"initiative":21,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0,"pull":1},{"name":"createElement","element":"air"}]}
 				,{"shuffle":true,"initiative":21,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0,"pull":1},{"name":"createElement","element":"air"}]}
 				,{"shuffle":false,"initiative":29,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"range":0,"target":2},{"name":"convertElementToAction","element":"air","action":"push","mod":2}]}
 				,{"shuffle":false,"initiative":37,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"aoe":"aoe-4-with-black"},{"name":"convertElementToAction","element":"air", "action":"attackBuff","mod":1,"aoe":"aoe-circle-with-side-black"}]}
 				,{"shuffle":false,"initiative":43,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":0},{"name":"convertElementToAction","element":"air","target":2}]}
 				,{"shuffle":false,"initiative":43,"line":[{"name":"push", "mod":1},{"name":"text","label":"Target all adjacent enemies"},{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"earth", "action":"attackBuff","range":-2}]}
-				,{"shuffle":false,"initiative":02,"line":[{"name":"shield","mod":1},{"name":"move","mod":-1},{"name":"attack","mod":-1,"range":0},{"name":"convertElementToAction","element":"any","action":"element","toElement":"air"}]}
+				,{"shuffle":false,"initiative":2,"line":[{"name":"shield","mod":1},{"name":"move","mod":-1},{"name":"attack","mod":-1,"range":0},{"name":"convertElementToAction","element":"any","action":"element","toElement":"air"}]}
 			]
 		},
 		{
