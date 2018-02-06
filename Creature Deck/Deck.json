@@ -164,21 +164,26 @@
 				,{"shuffle":false,"initiative":83,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1},{"name":"createElement","element":"earth"}]}
 				,{"shuffle":false,"initiative":93,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"earth","action":"push","mod":1}]}
 				,{"shuffle":false,"initiative":79,"line":[{"name":"move","mod":1},{"name":"attack","mod":0},{"name":"convertElementToAction","element":"air","action":"attackBuff","mod":-2}]}
-				,{"shuffle":false,"initiative":87,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"aoe":"aoe-4-with-black"},{"name":"convertElementToAction","element":"any","action":"element","toElement":"earth"}]}
+				,{"shuffle":false,"initiative":87,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"aoe":"aoe-4-with-black"},{"name":"text", "label":"Attack using area of effect (A)."}, {"name":"convertElementToAction","element":"any","action":"element","toElement":"earth"}]}
 				]
 		},
 		{
 		   "name": "Elder Drake"
 		   , "cards":
-			   [ {"shuffle":true, "initiative":85, "line":[{"name":"attack","mod":0}]}
-			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Move and summon 2 Zephyrs"}]}
-			   , {"shuffle":false, "initiative":79, "line":[{"name":"attack","mod":0}]}
-			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Move and summon 2 Zephyrs"}]}
-			   , {"shuffle":false, "initiative":73, "line":[{"name":"attack","mod":0}]}
-			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Move and summon 2 Zephyrs"}]}
+			   [ {"shuffle":true, "initiative":85, "line":[{"name":"attack","mod":0, "aoe":"elderDrake"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text" "label":"Summon 2 Zephyrs."}, {"name":"text" "label":"Zephyrs cannot be damaged in any way."}]}
+			   , {"shuffle":false, "initiative":79, "line":[{"name":"attack","mod":0, "aoe":"elderDrake"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text" "label":"Summon 2 Zephyrs."}, {"name":"text" "label":"Zephyrs cannot be damaged in any way."}]}
+			   , {"shuffle":false, "initiative":73, "line":[{"name":"attack","mod":0, "aoe":"elderDrake"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Fly to the next perch of boulders in order of a, b, c, and then back to a."}, {"name":"text" "label":"Summon 2 Zephyrs."}, {"name":"text" "label":"Zephyrs cannot be damaged in any way."}]}
 			   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2}]}
 			   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0}]}
 			   ]
+		},
+		{
+		   "name": "Zephyr"
+		   , "cards":
+			   [  {"shuffle":true, "initiative":00, "line":[{"name":"text","label":"*** SPECIAL ***"}, {"name":"text" "label":"Zephyrs cannot be damaged in any way. They play immediately before the Elder Drake's turn every round."},{"name":"move", "mod":0}, {"name":"attack", "mod":0}]}]
 		},
 		{
 		  "name": "Flame Demon"
@@ -186,7 +191,7 @@
 			[{"shuffle":false,"initiative":3,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1,"range":0},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":false,"initiative":24,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":true,"initiative":46,"line":[{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"fire","action":"attackBuff","aoe":"aoe-circle"}]}
-			,{"shuffle":false,"initiative":49,"line":[{"name":"attack","mod":0,"aoe":"aoe-line-3-with-black"},{"name":"convertElementToAction","element":"fire","action":"attackBuff","mod":1,"wound":true}]}
+			,{"shuffle":false,"initiative":49,"line":[{"name":"attack","mod":0,"aoe":"aoe-line-3-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."}, {"name":"convertElementToAction","element":"fire","action":"attackBuff","mod":1,"wound":true}]}
 			,{"shuffle":false,"initiative":67,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":-1},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":false,"initiative":77,"line":[{"name":"attack","mod":0},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"ice","action":"text","label":"Flame Demon suffers 1 damaage."}]}
 			,{"shuffle":true,"initiative":30,"line":[{"name":"convertElementToAction","element":"fire","action":"text","label":"All adjacent enemies suffer 2 damage."},{"name":"move","mod":0},{"name":"attack", "mod":-2,"wound":true,"target":2}]}
@@ -233,12 +238,12 @@
 		  "name":"Harrower Infester"
 		  , "cards":
 			[{"shuffle":false,"initiative":38,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"target":2}]}
-			,{"shuffle":false,"initiative":7,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"poison":true},{"name":"createElement","element":"dark"}]}
+			,{"shuffle":false,"initiative":7,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"poison":true},{"name":"createElement","element":"night"}]}
 			,{"shuffle":false,"initiative":16,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"heal","mod":5,"range":0}]}
 			,{"shuffle":false,"initiative":16,"line":[{"name":"attack","mod":2,"immobilize":true},{"name":"retaliate","mod":2}]}
 			,{"shuffle":true,"initiative":2,"line":[{"name":"shield","mod":2},{"name":"retaliate","mod":2,"range":3}]}
-			,{"shuffle":false,"initiative":30,"line":[{"name":"move","mod":-1},{"name":"attack","mod":0,"aoe":"aoe-line-4-with-black"},{"name":"convertElementToAction","element":"dark","action":"text","label":"Perform \"Heal 2\" for each target damaged"}]}
-			,{"shuffle":false,"initiative":38,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"target":2},{"name":"convertElementToAction","element":"dark","action":"attackBuff","mod":2,"disarm":true}]}
+			,{"shuffle":false,"initiative":30,"line":[{"name":"move","mod":-1},{"name":"attack","mod":0,"aoe":"aoe-line-4-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."}, {"name":"convertElementToAction","element":"night","action":"text","label":"Perform \"Heal 2\" for each target damaged"}]}
+			,{"shuffle":false,"initiative":38,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"target":2},{"name":"convertElementToAction","element":"night","action":"attackBuff","mod":2,"disarm":true}]}
 			,{"shuffle":true,"initiative":7,"line":[{"name":"attack","mod":-1,"range":3,"muddle":true},{"name":"heal","mod":4,"range":0}]}
 			]
 		},
@@ -283,11 +288,11 @@
 		   "name": "Jekserah"
 		   , "cards":
 			   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"Summon Living Bones"},{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"}]}
-			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Summon Living Corpse"},{"name":"move","mod":-1},{"name":"attack","mod":-2}]}
+			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Summon Living Corpse"},{"name":"move","mod":-1},{"name":"attack","mod":2}]}
 			   , {"shuffle":false, "initiative":79, "line":[{"name":"text","label":"Summon Living Bones"},{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"}]}
-			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Summon Living Corpse"},{"name":"move","mod":-1},{"name":"attack","mod":-2}]}
+			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Summon Living Corpse"},{"name":"move","mod":-1},{"name":"attack","mod":2}]}
 			   , {"shuffle":false, "initiative":73, "line":[{"name":"text","label":"Summon Living Bones"},{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"}]}
-			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Summon Living Corpse"},{"name":"move","mod":-1},{"name":"attack","mod":-2}]}
+			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Summon Living Corpse"},{"name":"move","mod":-1},{"name":"attack","mod":2}]}
 			   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2} ]}
 			   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0} ]}
 			   ]
@@ -358,14 +363,14 @@
 		{
 		  "name":"Night Demon"
 		  , "cards":
-			[{"shuffle":false,"initiative":4,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"createElement","element":"dark"}]}
-			,{"shuffle":false,"initiative":7,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"convertElementToAction","element":"dark","action":"invisible","range":0}]}
-			,{"shuffle":false,"initiative":22,"line":[{"name":"move","mod":0},{"name":"attack","mod":0},{"name":"createElement","element":"dark"}]}
-			,{"shuffle":false,"initiative":26,"line":[{"name":"attack","mod":-2,"range":3,"target":3},{"name":"convertElementToAction","element":"dark","action":"muddle"}]}
-			,{"shuffle":true,"initiative":46,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1},{"name":"convertElementToAction","element":"dark","action":"attackBuff","mod":2}]}
-			,{"shuffle":true,"initiative":41,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1},{"name":"createElement","element":"dark"}]}
+			[{"shuffle":false,"initiative":4,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"createElement","element":"night"}]}
+			,{"shuffle":false,"initiative":7,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"convertElementToAction","element":"night","action":"invisible","range":0}]}
+			,{"shuffle":false,"initiative":22,"line":[{"name":"move","mod":0},{"name":"attack","mod":0},{"name":"createElement","element":"night"}]}
+			,{"shuffle":false,"initiative":26,"line":[{"name":"attack","mod":-2,"range":3,"target":3},{"name":"convertElementToAction","element":"night","action":"muddle"}]}
+			,{"shuffle":true,"initiative":46,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1},{"name":"convertElementToAction","element":"night","action":"attackBuff","mod":2}]}
+			,{"shuffle":true,"initiative":41,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1},{"name":"createElement","element":"night"}]}
 			,{"shuffle":false,"initiative":35,"line":[{"name":"attack","mod":-1},{"name":"attack","mod":-1,"pierce":2},{"name":"convertElementToAction","element":"light","action":"curse","range":0}]}
-			,{"shuffle":false,"initiative":15,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1},{"name":"text","label":"All adjacent enemies and allies suffer 1 damage."},{"name":"convertElementToAction","element":"any","action":"element","toElement":"dark"}]}
+			,{"shuffle":false,"initiative":15,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1},{"name":"text","label":"All adjacent enemies and allies suffer 1 damage."},{"name":"convertElementToAction","element":"any","action":"element","toElement":"night"}]}
 		  ]
 		},
 		{
@@ -384,12 +389,12 @@
 		{
 		   "name": "Prime Demon"
 		   , "cards":
-			   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"Throne moves, Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
-			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Throne moves, Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
-			   , {"shuffle":false, "initiative":79, "line":[{"name":"text","label":"Throne moves, Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
-			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Throne moves, Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
-			   , {"shuffle":false, "initiative":73, "line":[{"name":"text","label":"Throne moves, Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
-			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Throne moves, Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
+			   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"Throne moves"}, {"name":"text","label":"Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
+			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Throne moves"}, {"name":"text","label":"Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
+			   , {"shuffle":false, "initiative":79, "line":[{"name":"text","label":"Throne moves"}, {"name":"text","label":"Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
+			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Throne moves"}, {"name":"text","label":"Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
+			   , {"shuffle":false, "initiative":73, "line":[{"name":"text","label":"Throne moves"}, {"name":"text","label":"Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
+			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Throne moves"}, {"name":"text","label":"Summon Demon"},{"name":"move","mod":2},{"name":"attack","mod":-1}]}
 			   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2} ]}
 			   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0} ]}
 			   ]
@@ -427,7 +432,7 @@
 			,{"shuffle":false,"initiative":97,"line":[{"name":"text","label":"Summon normal Earth Demon"},{"name":"createElement","element":"earth"}]}
 			,{"shuffle":false,"initiative":22,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"fire","action":"retaliate","mod":3}]}
 			,{"shuffle":true,"initiative":68,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":3},{"name":"text","label":"All allies and enemies adjacent to the target suffer 2 damage."},{"name":"createElement","element":"earth"}]}
-			,{"shuffle":false,"initiative":41,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1, "aoe":"aoe-4-with-black"},{"name":"convertElementToAction","element":"earth","action":"attackBuff","mod":2,"immobilize":true}]}
+			,{"shuffle":false,"initiative":41,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1, "aoe":"aoe-4-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."},{"name":"convertElementToAction","element":"earth","action":"attackBuff","mod":2,"immobilize":true}]}
 			,{"shuffle":false,"initiative":51,"line":[{"name":"text","label":"All enemies suffer 2 damage."},{"name":"convertElementToAction","element":"fire","action":"wound","label":"all enemies"},{"name":"convertElementToAction","element":"earth","action":"disarm","label":"all enemies"}]}
 			,{"shuffle":false,"initiative":31,"line":[{"name":"heal","mod":4,"range":3},{"name":"convertElementToAction","element":"earth","action":"target","mod":3}]}
 			,{"shuffle":true,"initiative":68,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1,"range":3,"target":2},{"name":"createElement","element":"fire"}]}
@@ -464,7 +469,7 @@
 			  , {"shuffle":false, "initiative":89, "line":[{"name":"attack", "mod":-2, "stun":true} ]}
 			  , {"shuffle":false, "initiative":87, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":1} ]}
 			  , {"shuffle":false, "initiative":27, "line":[{"name":"attack", "mod":0, "target":2, "poison":true} ]}
-			  , {"shuffle":true, "initiative":57, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":-1, "range":-1, "aoe":"aoe-triangle-2-side"}, {"name":"text", "label":"Attack using area of effect (A)."}  ]}
+			  , {"shuffle":true, "initiative":57, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":-1, "range":-1, "aoe":"aoe-triangle-2-side"}, {"name":"text", "label":"Attack using area of effect (A)."}, {"name":"text", "label":"Attack using area of effect (A)."}  ]}
 			  , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":0} ]}
 			  , {"shuffle":false, "initiative":32, "line":[{"name":"move", "mod":1}, {"name":"attack", "mod":-1} ]}
 			  ]
@@ -491,7 +496,7 @@
 			,{"shuffle":false,"initiative":68,"line":[{"name":"move","mod":0},{"name":"attack","mod":1},{"name":"createElement","element":"light"}]}
 			,{"shuffle":true,"initiative":73,"line":[{"name":"move","mod":0},{"name":"attack","mod":1},{"name":"convertElementToAction","element":"light","action":"heal","mod":3,"range":0}]}
 			,{"shuffle":false,"initiative":95,"line":[{"name":"move","mod":-1},{"name":"attack","mod":0,"range":4},{"name":"convertElementToAction","element":"light","action":"text","label":"Target all enemies within range"}]}
-			,{"shuffle":false,"initiative":88,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"text","layer":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"dark","action":"muddle","range":0}]}
+			,{"shuffle":false,"initiative":88,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"text","layer":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"night","action":"muddle","range":0}]}
 			,{"shuffle":false,"initiative":50,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":3},{"name":"convertElementToAction","element":"any","action":"element","toElement":"light"}]}
 			]
 		},
@@ -511,11 +516,11 @@
 		{
 		   "name": "The Colorless"
 		   , "cards":
-			   [ {"shuffle":true, "initiative":85, "line":[{"name":"convertElementToAction","element":"dark","action":"text","label":"Summon Night Demon"},{"name":"invisible"},{"name":"text","label":"self"}]}
+			   [ {"shuffle":true, "initiative":85, "line":[{"name":"convertElementToAction","element":"night","action":"text","label":"Summon Night Demon"},{"name":"invisible"},{"name":"text","label":"self"}]}
 			   , {"shuffle":true, "initiative":17, "line":[{"name":"convertElementToAction", "element":"light","action":"text","label":"Summon Sun Demon"},{"name":"heal","mod":4,"range":0},{"name":"shield","mod":1}]}
-			   , {"shuffle":false, "initiative":79, "line":[{"name":"convertElementToAction","element":"dark","action":"text","label":"Summon Night Demon"},{"name":"invisible"},{"name":"text","label":"self"}]}
+			   , {"shuffle":false, "initiative":79, "line":[{"name":"convertElementToAction","element":"night","action":"text","label":"Summon Night Demon"},{"name":"invisible"},{"name":"text","label":"self"}]}
 			   , {"shuffle":false, "initiative":11, "line":[{"name":"convertElementToAction", "element":"light","action":"text","label":"Summon Sun Demon"},{"name":"heal","mod":4,"range":0},{"name":"shield","mod":1}]}
-			   , {"shuffle":false, "initiative":73, "line":[{"name":"convertElementToAction","element":"dark","action":"text","label":"Summon Night Demon"},{"name":"invisible"},{"name":"text","label":"self"}]}
+			   , {"shuffle":false, "initiative":73, "line":[{"name":"convertElementToAction","element":"night","action":"text","label":"Summon Night Demon"},{"name":"invisible"},{"name":"text","label":"self"}]}
 			   , {"shuffle":false, "initiative":14, "line":[{"name":"convertElementToAction", "element":"light","action":"text","label":"Summon Sun Demon"},{"name":"heal","mod":4,"range":0},{"name":"shield","mod":1}]}
 			   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2}]}
 			   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0}]}
@@ -537,12 +542,12 @@
 		{
 		   "name": "The Sightless Eye"
 		   , "cards":
-			   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA"}]}
-			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB"}]}
-			   , {"shuffle":false, "initiative":79, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA"}]}
-			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB"}]}
-			   , {"shuffle":false, "initiative":73, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA"}]}
-			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB"}]}
+			   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA" }, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB" }, {"name":"text", "label":"Attack using area of effect (B)."}]}
+			   , {"shuffle":false, "initiative":79, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB"}, {"name":"text", "label":"Attack using area of effect (B)."}]}
+			   , {"shuffle":false, "initiative":73, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Summon Deep Terror"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB"}, {"name":"text", "label":"Attack using area of effect (B)."}]}
 			   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2}]}
 			   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0}]}
 			   ]
@@ -554,7 +559,7 @@
 				,{"shuffle":true,"initiative":21,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0,"pull":1},{"name":"createElement","element":"air"}]}
 				,{"shuffle":true,"initiative":21,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0,"pull":1},{"name":"createElement","element":"air"}]}
 				,{"shuffle":false,"initiative":29,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"range":0,"target":2},{"name":"convertElementToAction","element":"air","action":"push","mod":2}]}
-				,{"shuffle":false,"initiative":37,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"aoe":"aoe-4-with-black"},{"name":"convertElementToAction","element":"air", "action":"attackBuff","mod":1,"aoe":"aoe-circle-with-side-black"}]}
+				,{"shuffle":false,"initiative":37,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"aoe":"aoe-4-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."},{"name":"convertElementToAction","element":"air", "action":"attackBuff","mod":1,"aoe":"aoe-circle-with-side-black"}, {"name":"text", "label":"Use area of effect (B)."}]}
 				,{"shuffle":false,"initiative":43,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":0},{"name":"convertElementToAction","element":"air","target":2}]}
 				,{"shuffle":false,"initiative":43,"line":[{"name":"push", "mod":1},{"name":"text","label":"Target all adjacent enemies"},{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"earth", "action":"attackBuff","range":-2}]}
 				,{"shuffle":false,"initiative":2,"line":[{"name":"shield","mod":1},{"name":"move","mod":-1},{"name":"attack","mod":-1,"range":0},{"name":"convertElementToAction","element":"any","action":"element","toElement":"air"}]}
