@@ -1,7 +1,7 @@
 {
 	"name": "Inox Bodyguard",
 	"isBoss":true,
-	"immunity":{"disarm":true, "muddle":true, "stun":true, "poison":true }
+	"immunity":{"disarm":true, "muddle":true, "stun":true, "poison":true },
         "level": [
         {
           "level": 0,
