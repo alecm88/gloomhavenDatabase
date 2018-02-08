@@ -13,6 +13,13 @@
             "move": 2,
             "attack": 3,
             "range": 0
+          },
+	  {
+			"type":"elite",
+            "health": 7,
+            "move": 2,
+            "attack": 3,
+            "range": 0
           }]
         },
         {
@@ -20,6 +27,13 @@
           "statGroup":[
 		{
 			"type":"normal",
+            "health": 9,
+            "move": 2,
+            "attack": 3,
+            "range": 0
+          },
+	  {
+			"type":"elite",
             "health": 9,
             "move": 2,
             "attack": 3,
@@ -35,6 +49,13 @@
             "move": 2,
             "attack": 4,
             "range": 0
+          },
+	  {
+			"type":"elite",
+            "health": 11,
+            "move": 2,
+            "attack": 4,
+            "range": 0
           }]
         },
         {
@@ -42,6 +63,13 @@
           "statGroup":[
 		{
 			"type":"normal",
+            "health": 14,
+            "move": 3,
+            "attack": 4,
+            "range": 0
+         },
+	  {
+			"type":"elite",
             "health": 14,
             "move": 3,
             "attack": 4,
@@ -57,6 +85,13 @@
             "move": 3,
             "attack": 5,
             "range": 0
+          },
+	  {
+			"type":"elite",
+            "health": 16,
+            "move": 3,
+            "attack": 5,
+            "range": 0
           }]
         },
         {
@@ -64,6 +99,13 @@
           "statGroup":[
 		{
 			"type":"normal",
+            "health": 20,
+            "move": 3,
+            "attack": 5,
+            "range": 0
+          },
+	  {
+			"type":"elite",
             "health": 20,
             "move": 3,
             "attack": 5,
@@ -79,6 +121,13 @@
             "move": 4,
             "attack": 6,
             "range": 0
+          },
+	  {
+		"type":"elite",
+            "health": 21,
+            "move": 4,
+            "attack": 6,
+            "range": 0
           }]
         },
         {
@@ -86,6 +135,13 @@
           "statGroup":[
 		{
 		"type":"normal",
+            "health": 25,
+            "move": 4,
+            "attack": 6,
+            "range": 0
+         },
+	  {
+		"type":"elite",
             "health": 25,
             "move": 4,
             "attack": 6,
