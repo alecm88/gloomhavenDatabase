@@ -12,7 +12,15 @@
             "health": 9,
             "move": 3,
             "attack": 2,
-            "range": 0
+            "range": 0,
+			"heal":0
+          },{
+			"type":"elite",
+            "health": 9,
+            "move": 3,
+            "attack": 2,
+            "range": 0,
+			"heal":0
           }]
         },
         {
@@ -23,7 +31,16 @@
             "health": 10,
             "move": 3,
             "attack": 3,
-            "range": 0
+            "range": 0,
+			"heal":0
+          },
+		  {
+			"type":"elite",
+            "health": 10,
+            "move": 3,
+            "attack": 3,
+            "range": 0,
+			"heal":0
           }]
         },
         {
@@ -34,7 +51,15 @@
             "health": 11,
             "move": 4,
             "attack": 3,
-            "range": 0
+            "range": 0,
+			"heal":1
+          },{
+			"type":"elite",
+            "health": 11,
+            "move": 4,
+            "attack": 3,
+            "range": 0,
+			"heal":1
           }]
         },
         {
@@ -45,7 +70,15 @@
             "health": 12,
             "move": 4,
             "attack": 4,
-            "range": 0
+            "range": 0,
+			"heal":1
+         },{
+			"type":"elite",
+            "health": 12,
+            "move": 4,
+            "attack": 4,
+            "range": 0,
+			"heal":1
          }]
         },
         {
@@ -56,7 +89,15 @@
             "health": 14,
             "move": 4,
             "attack": 4,
-            "range": 0
+            "range": 0,
+			"heal":2
+          },{
+			"type":"elite",
+            "health": 14,
+            "move": 4,
+            "attack": 4,
+            "range": 0,
+			"heal":2
           }]
         },
         {
@@ -67,7 +108,16 @@
             "health": 15,
             "move": 4,
             "attack": 5,
-            "range": 0
+            "range": 0,
+			"heal":2
+          },
+		  {
+			"type":"elite",
+            "health": 15,
+            "move": 4,
+            "attack": 5,
+            "range": 0,
+			"heal":2
           }]
         },
         {
@@ -78,7 +128,16 @@
             "health": 17,
             "move": 4,
             "attack": 5,
-            "range": 0
+            "range": 0,
+			"heal":3
+          },
+		  {
+		"type":"elite",
+            "health": 17,
+            "move": 4,
+            "attack": 5,
+            "range": 0,
+			"heal":3
           }]
         },
         {
@@ -89,7 +148,16 @@
             "health": 19,
             "move": 5,
             "attack": 7,
-            "range": 0
+            "range": 0,
+			"heal":3
+         },
+		 {
+		"type":"elite",
+            "health": 19,
+            "move": 5,
+            "attack": 7,
+            "range": 0,
+			"heal":3
          }]
         }
       ]
