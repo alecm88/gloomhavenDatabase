@@ -13,6 +13,12 @@
             "move": 0,
             "attack": 5,
             "range": 3
+          },{
+			"type":"elite",
+            "health": 7,
+            "move": 0,
+            "attack": 5,
+            "range": 3
           }]
         },
         {
@@ -20,6 +26,12 @@
           "statGroup":[
 		{
 			"type":"normal",
+            "health": 8,
+            "move": 0,
+            "attack": 6,
+            "range": 3
+          },{
+			"type":"elite",
             "health": 8,
             "move": 0,
             "attack": 6,
@@ -35,6 +47,12 @@
             "move": 0,
             "attack": 6,
             "range": 3
+          },{
+			"type":"elite",
+            "health": 10,
+            "move": 0,
+            "attack": 6,
+            "range": 3
           }]
         },
         {
@@ -42,6 +60,12 @@
           "statGroup":[
 		{
 			"type":"normal",
+            "health": 11,
+            "move": 0,
+            "attack": 7,
+            "range": 3
+         },{
+			"type":"elite",
             "health": 11,
             "move": 0,
             "attack": 7,
@@ -68,6 +92,12 @@
             "move": 0,
             "attack": 8,
             "range": 3
+          },{
+			"type":"elite",
+            "health": 15,
+            "move": 0,
+            "attack": 8,
+            "range": 3
           }]
         },
         {
@@ -79,6 +109,12 @@
             "move": 0,
             "attack": 8,
             "range": 3
+          },{
+		"type":"elite",
+            "health": 18,
+            "move": 0,
+            "attack": 8,
+            "range": 3
           }]
         },
         {
@@ -86,6 +122,12 @@
           "statGroup":[
 		{
 		"type":"normal",
+            "health": 20,
+            "move": 0,
+            "attack": 9,
+            "range": 3
+         },{
+		"type":"elite",
             "health": 20,
             "move": 0,
             "attack": 9,
