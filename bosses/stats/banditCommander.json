@@ -4,6 +4,7 @@
 	"isBoss": true,
 	"immunity":{"stun":true, "immobilize":true, "curse":true },
 	"level": [
+    
         {
           "level": 0,
           "statGroup":[
