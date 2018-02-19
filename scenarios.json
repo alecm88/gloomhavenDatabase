@@ -70,13 +70,13 @@
 		"num": 11
 		, "name": "Gloomhaven Square A"
 		, "monsterList":
-            [ "Captain of the Guard", "City Archer", "Ciy Guard", "Living Bones", "Living Corpse"  ]
+            [ "Captain of the Guard", "City Archer", "City Guard", "Living Bones", "Living Corpse"  ]
         },
 		{ 
 		"num": 12
 		, "name": "Gloomhaven Square B"
 		, "monsterList":
-            [ "City Archer", "Ciy Guard", "Cultist", "Jekserah", "Living Bones", "Living Corpse"  ]
+            [ "City Archer", "City Guard", "Cultist", "Jekserah", "Living Bones", "Living Corpse"  ]
         },
 		{ 
 		"num": 13
