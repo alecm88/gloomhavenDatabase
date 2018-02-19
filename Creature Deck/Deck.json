@@ -667,12 +667,12 @@
 		{
 		   "name": "The Sightless Eye"
 		   , "cards":
-			   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"Special1"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA" }, {"name":"text", "label":"Attack using area of effect (A)."}]}
-			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Special2"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB" }, {"name":"text", "label":"Attack using area of effect (B)."}]}
-			   , {"shuffle":false, "initiative":79, "line":[{"name":"text","label":"Special1"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
-			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Special2"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB"}, {"name":"text", "label":"Attack using area of effect (B)."}]}
-			   , {"shuffle":false, "initiative":73, "line":[{"name":"text","label":"Special1"},{"name":"attack","mod":-3,"aoe":"theSightlessEyeA"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
-			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Special2"},{"name":"attack","mod":-2,"aoe":"theSightlessEyeB"}, {"name":"text", "label":"Attack using area of effect (B)."}]}
+			   [ {"shuffle":true, "initiative":85, "line":[{"name":"text","label":"Special1"},{"name":"attack","mod":-3, "range":-5, "aoe":"theSightlessEyeA" }, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":true, "initiative":17, "line":[{"name":"text","label":"Special2"},{"name":"attack","mod":-2, "range":-5, "aoe":"theSightlessEyeB" }, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":false, "initiative":79, "line":[{"name":"text","label":"Special1"},{"name":"attack","mod":-3, "range":-5, "aoe":"theSightlessEyeA"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":false, "initiative":11, "line":[{"name":"text","label":"Special2"},{"name":"attack","mod":-2, "range":-5, "aoe":"theSightlessEyeB"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":false, "initiative":73, "line":[{"name":"text","label":"Special1"},{"name":"attack","mod":-3, "range":-5, "aoe":"theSightlessEyeA"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
+			   , {"shuffle":false, "initiative":14, "line":[{"name":"text","label":"Special2"},{"name":"attack","mod":-2, "range":-5, "aoe":"theSightlessEyeB"}, {"name":"text", "label":"Attack using area of effect (A)."}]}
 			   , {"shuffle":false, "initiative":52, "line":[{"name":"move", "mod": -1}, {"name":"attack", "mod": -1, "range": 3, "target": 2}]}
 			   , {"shuffle":false, "initiative":36, "line":[{"name":"move", "mod": 0}, {"name":"attack", "mod": 0}]}
 			   ]
