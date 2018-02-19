@@ -28,13 +28,13 @@
 		"num": 4
 		, "name": "Crypt of the Damned"
 		, "monsterList":
-            [ "Bandit Archer", "Cultist", "Living Bones", "Earth Demon" ]
+            [ "Bandit Archer", "Cultist", "Living Bones", "Earth Demon", "Wind Demon" ]
         },
 		{ 
 		"num": 5
 		, "name": "Ruinous Crypt"
 		, "monsterList":
-            [ "Cultist", "Flame Demon", "Frost Demon", "Living Corpse", "Night Demon" ]
+            [ "Cultist", "Flame Demon", "Frost Demon", "Living Bones", "Night Demon" ]
         },
 		{ 
 		"num": 6
