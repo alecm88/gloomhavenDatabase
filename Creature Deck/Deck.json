@@ -82,7 +82,7 @@
             , {"shuffle":false, "initiative":44, "line":[{"name":"move", "mod":-1}, {"name":	"attack", "mod":  1,	"range": 0		}]}
             , {"shuffle":false, "initiative":56, "line":[{"name":"attack", "mod":-1,	"range": 0,		"target": 2		}]}
             , {"shuffle":true,  "initiative":68, "line":[{"name":"attack", "mod":1,		"range": 1						}]}
-            , {"shuffle":false, "initiative":14, "line":[{"name":"move", "mod":1}, {"name":"attack", "mod":-1, "range":0}, {"name":"text", "label":"Create a 3 damage trap in an adjacent empty hex closest to an enemy."} ]}
+            , {"shuffle":false, "initiative":14, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":-1, "range":0}, {"name":"text", "label":"Create a 3 damage trap in an adjacent empty hex closest to an enemy."} ]}
             , {"shuffle":true,  "initiative":29, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":-1, "range":1, "immobilize":true}]}
             ]
         },		
@@ -206,8 +206,8 @@
 		{ "name": "Deep Terror"
         , "cards":
 			[ {"shuffle":false, "initiative":65, "line":[{"name":"attack", "mod": 0, "range":3, "target":3, "curse":true} ]}
-			, {"shuffle":true, "initiative":60, "line":[{"name":"attack", "mod": 0, "aoe":"aoe-line-6-with-black", "pierce":3}, {"name":"text", "label":"Attack using area of effect (A)."}  ]}
-			, {"shuffle":true, "initiative":60, "line":[{"name":"attack", "mod": 0, "aoe":"aoe-line-6-with-black", "pierce":3}, {"name":"text", "label":"Attack using area of effect (A)."}  ]}
+			, {"shuffle":true, "initiative":60, "line":[{"name":"attack", "mod": 0, "range":-5, "aoe":"aoe-line-6-with-black", "pierce":3}, {"name":"text", "label":"Attack using area of effect (A)."}  ]}
+			, {"shuffle":true, "initiative":60, "line":[{"name":"attack", "mod": 0, "range":-5, "aoe":"aoe-line-6-with-black", "pierce":3}, {"name":"text", "label":"Attack using area of effect (A)."}  ]}
 			, {"shuffle":false, "initiative":84, "line":[{"name":"attack", "mod": -1}, {"name":"text", "label":"Target all adjacent enemies."}, {"name":"attack", "mod":0, "range":4, "wound":true} ]}
 			, {"shuffle":false, "initiative":75, "line":[{"name":"attack", "mod": 0, "poison":true}, {"name":"attack", "mod":-1, "range":5, "immobilize":true} ]}
 			, {"shuffle":false, "initiative":75, "line":[{"name":"attack", "mod": -2, "disarm":true}, {"name":"text", "label":"Target all adjacent enemies."}, {"name":"attack", "mod":0, "range":3, "target":2} ]}
@@ -231,7 +231,7 @@
 				,{"shuffle":false,"initiative":83,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1},{"name":"createElement","element":"earth"}]}
 				,{"shuffle":false,"initiative":93,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"earth","action":"push1"}]}
 				,{"shuffle":false,"initiative":79,"line":[{"name":"move","mod":1},{"name":"attack","mod":0},{"name":"convertElementToAction","element":"air","action":"attackBuff","mod":-2}]}
-				,{"shuffle":false,"initiative":87,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"aoe":"aoe-4-with-black"},{"name":"text", "label":"Attack using area of effect (A)."}, {"name":"convertElementToAction","element":"any","action":"element","toElement":"earth"}]}
+				,{"shuffle":false,"initiative":87,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1, "range":-5, "aoe":"aoe-4-with-black"},{"name":"text", "label":"Attack using area of effect (A)."}, {"name":"convertElementToAction","element":"any","action":"element","toElement":"earth"}]}
 				]
 		},
 		{
@@ -253,7 +253,7 @@
 			[{"shuffle":false,"initiative":3,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1,"range":0},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":false,"initiative":24,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":true,"initiative":46,"line":[{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"fire","action":"text", "label":"Use area of effect (B)."}, {"name":"aoe2", "aoe":"aoe-circle"}]}
-			,{"shuffle":false,"initiative":49,"line":[{"name":"attack","mod":0,"aoe":"aoe-line-3-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."}, {"name":"convertElementToAction","element":"fire","action":"attackBuff","mod":1,"wound":true}]}
+			,{"shuffle":false,"initiative":49,"line":[{"name":"attack","mod":0, "range":-5, "aoe":"aoe-line-3-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."}, {"name":"convertElementToAction","element":"fire","action":"attackBuff","mod":1,"wound":true}]}
 			,{"shuffle":false,"initiative":67,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":-1},{"name":"createElement","element":"fire"}]}
 			,{"shuffle":false,"initiative":77,"line":[{"name":"attack","mod":0},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"frost","action":"text","label":"Flame Demon suffers 1 damage."}]}
 			,{"shuffle":true,"initiative":30,"line":[{"name":"convertElementToAction","element":"fire","action":"text","label":"All adjacent enemies suffer 2 damage."},{"name":"move","mod":0},{"name":"attack", "mod":-2,"target":2, "wound":true}]}
@@ -407,7 +407,7 @@
 		, "cards":
 			[ {"shuffle":false, "initiative":21, "line":[{"name":"move", "mod": 1}, {"name":"text", "label":"Target one adjacent enemy and apply the following:"}, {"name":"muddle"}, {"name":"immobilize"} ]}
 			, {"shuffle":false, "initiative":47, "line":[{"name":"move", "mod":1}, {"name":"attack", "mod":-1} ]}
-			, {"shuffle":false, "initiative":71, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":1, "poison":true},{"name":"text", "label":"Target all adjacent enemies"} ]}
+			, {"shuffle":false, "initiative":71, "line":[{"name":"move", "mod":0}, {"name":"attack", "mod":1}, {"name":"poison"},{"name":"text", "label":"Target all adjacent enemies"} ]}
 			, {"shuffle":false, "initiative":91, "line":[{"name":"move", "mod":1}, {"name":"text", "label":"Living Corpse suffers 1 damage."} ]}
 			, {"shuffle":false, "initiative":32, "line":[{"name":"attack", "mod":2, "push":1}, {"name":"text", "label":"Living Corpse suffers 1 damage."} ]}
 			, {"shuffle":false, "initiative":82, "line":[{"name":"move", "mod":-1}, {"name":"attack", "mod":1} ]}
@@ -541,7 +541,7 @@
 				,{"shuffle":false,"initiative":14,"line":[{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"frost","action":"attackBuff","mod":2,"immobilize":true},{"name":"retaliate","mod":2},{"name":"createElement","element":"air"}]}
 				,{"shuffle":false,"initiative":14,"line":[{"name":"shield","mod":4},{"name":"heal","mod":2, "range":3},{"name":"convertElementToAction","element":"frost","action":"text","label":"+3 Heal"}, {"name":"convertElementToAction","element":"air","action":"attack","mod":"0"}]}
 				,{"shuffle":true,"initiative":47,"line":[{"name":"disarm"},{"name":"text","label":"Target all adjacent enemies"},{"name":"move","mod":0},{"name":"attack","mod":-1,"range":0},{"name":"createElement","element":"air"}]}
-				,{"shuffle":true,"initiative":35,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1,"aoe":"aoe-triangle-3-side-with-corner-black"},{"name":"text", "label":"Attack using area of effect (A)."}, {"name":"createElement","element":"frost"}]}
+				,{"shuffle":true,"initiative":35,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1, "range":-5, "aoe":"aoe-triangle-3-side-with-corner-black"},{"name":"text", "label":"Attack using area of effect (A)."}, {"name":"createElement","element":"frost"}]}
 			]
 		},
 		{
@@ -551,7 +551,7 @@
 			,{"shuffle":false,"initiative":97,"line":[{"name":"text","label":"Summon normal Earth Demon"},{"name":"createElement","element":"earth"}]}
 			,{"shuffle":false,"initiative":22,"line":[{"name":"move","mod":1},{"name":"attack","mod":-1},{"name":"text","label":"Target all adjacent enemies"},{"name":"convertElementToAction","element":"fire","action":"retaliate"}]}
 			,{"shuffle":true,"initiative":68,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":3},{"name":"text","label":"All allies and enemies adjacent to the target suffer 2 damage."},{"name":"createElement","element":"earth"}]}
-			,{"shuffle":false,"initiative":41,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1, "aoe":"aoe-4-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."},{"name":"convertElementToAction","element":"earth","action":"attackBuff","mod":2,"immobilize":true}]}
+			,{"shuffle":false,"initiative":41,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1, "range":-5, "aoe":"aoe-4-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."},{"name":"convertElementToAction","element":"earth","action":"attackBuff","mod":2,"immobilize":true}]}
 			,{"shuffle":false,"initiative":51,"line":[{"name":"text","label":"All enemies suffer 2 damage."},{"name":"convertElementToAction","element":"fire","action":"woundAll"},{"name":"convertElementToAction","element":"earth","action":"disarmAll"}]}
 			,{"shuffle":false,"initiative":31,"line":[{"name":"heal","mod":4,"range":3},{"name":"convertElementToAction","element":"earth","action":"target3"}]}
 			,{"shuffle":true,"initiative":68,"line":[{"name":"move","mod":-1},{"name":"attack","mod":-1,"range":3,"target":2},{"name":"createElement","element":"fire"}]}
@@ -702,7 +702,7 @@
 				,{"shuffle":true,"initiative":21,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0,"pull":1},{"name":"createElement","element":"air"}]}
 				,{"shuffle":true,"initiative":21,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"range":0,"pull":1},{"name":"createElement","element":"air"}]}
 				,{"shuffle":false,"initiative":29,"line":[{"name":"move","mod":0},{"name":"attack","mod":-1,"range":0,"target":2},{"name":"convertElementToAction","element":"air","action":"push2"}]}
-				,{"shuffle":false,"initiative":37,"line":[{"name":"move","mod":0},{"name":"attack","mod":0,"aoe":"aoe-4-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."},{"name":"convertElementToAction","element":"air", "action":"attackBuff","mod":1}, {"name":"text", "label":"Use area of effect (B)."},{"name":"aoe2", "aoe":"aoe-circle-with-side-black"}]}
+				,{"shuffle":false,"initiative":37,"line":[{"name":"move","mod":0},{"name":"attack","mod":0, "range":-5, "aoe":"aoe-4-with-black"}, {"name":"text", "label":"Attack using area of effect (A)."},{"name":"convertElementToAction","element":"air", "action":"attackBuff","mod":1}, {"name":"text", "label":"Use area of effect (B)."},{"name":"aoe2", "aoe":"aoe-circle-with-side-black"}]}
 				,{"shuffle":false,"initiative":43,"line":[{"name":"move","mod":-1},{"name":"attack","mod":1,"range":0},{"name":"convertElementToAction","element":"air", "action":"target2"}]}
 				,{"shuffle":false,"initiative":43,"line":[{"name":"push", "mod":1},{"name":"text","label":"Target all adjacent enemies"},{"name":"attack","mod":0,"range":0},{"name":"convertElementToAction","element":"earth", "action":"minusRange"}]}
 				,{"shuffle":false,"initiative":2,"line":[{"name":"shield","mod":1},{"name":"move","mod":-1},{"name":"attack","mod":-1,"range":0},{"name":"convertElementToAction","element":"any","action":"element","toElement":"air"}]}
